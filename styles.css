@@ -23,10 +23,11 @@ Fonts:
   This CSS uses the provided color palette and beginner-friendly styles.
 */
 
-/* Set up the main font and background color for the whole page */
+/* Set up the main font and background color for the whole page
+   We use 'CMU Serif' as the main font for the landing page. */
 body {
   background-color: #f4f8fb; /* Soft light blue for a fresh look */
-  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
+  font-family: 'CMU Serif', serif, Arial, sans-serif; /* Use CMU Serif as the main font */
   margin: 0;
   padding: 0;
   color: #222;
