@@ -78,23 +78,24 @@ section {
 }
 
 /* Story Section Styles */
+/* We use a light yellow background for the story section */
 .story {
-  background-color: #8BD1CB; /* Secondary Light Blue */
-  color: #222;
+  background-color: #FFF9E3; /* Light yellow */
+  color: #222;               /* Dark text for good contrast */
   text-align: center;
   padding: 30px 20px;
 }
 
 /* Add accent color to section headings */
 h2 {
-  color: #2E9DF7; /* Primary blue */
+  color: #FFC907; /* Primary yellow */
   margin-top: 0;
   font-weight: bold;
 }
 
 /* Call-to-Action Section Styles */
 .call-to-action {
-  background-color: #FFC907; /* Primary Yellow */
+  background-color: #FFF9E3; /* Light yellow */
   color: #222;
   text-align: center;
   padding: 30px 20px;
@@ -112,7 +113,7 @@ h2 {
 /* Donate Button Styles */
 .donate-button {
   display: inline-block;
-  background-color: #4FCB53; /* Green */
+  background-color: #1D3F78; /* Dark Blue */
   color: #fff;
   padding: 14px 32px;
   text-decoration: none;
@@ -128,7 +129,7 @@ h2 {
 
 /* Change button color when hovered */
 .donate-button:hover {
-  background-color: #159A48; /* Dark Green */
+  background-color: #30569A; /* Dark Blue */
   transform: translateY(-2px) scale(1.04); /* Slight lift */
 }
 
