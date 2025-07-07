@@ -46,11 +46,20 @@ section {
 .hero {
   position: relative; /* Needed for overlay */
   /* Set a background image that covers the whole section */
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
-  background-size: cover;      /* Make the image cover the whole area */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat;
+  background-image: 
+    url('img/water-can-transparent.png'), /* Water can image on top */
+    url('https://cdn2.dropmarkusercontent.com/52043/c0d81f3ffd4d369506dfdaab33049e1b90c7bdc423af54ec39402b1b2c2b93aa/Madagascar_2019_CG-0519.jpg?Expires=1751858389&Signature=Iq3becn5o9k6NMjoje~T2MtjNkEvzYJnlm0OxGOwJNee837WmPuQI9~ins25ec8cqZHHfXlxthjf-TZ9kyT-AGkwfzAuNMIco85mot1CyN1JNM97jdLRSq2d4HdWl-VvgPZFrG34Nvm2Ni3KbYiVOgLL0mhIm0jE39TWG2IT73h5WWln8JpecEbEd~oKk07pBUhq0Ki49EyhR-UtvgFz0dLDabrxjvO3QC3axST2FwwfZk94iJWfkL9Gl89sKXbuazMVayf-demsPkbRd92o7ODpQMoTE5z27FUB8UFuItEgVwIKujOlrg1DdoQ-qDFXmYqCdHG44SXuo2UVOA44ew__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ'); /* Main background image */
+  background-position: top right, 50% 22%; /* Water can at top right, main image centered */
+  background-size: 120px, cover; /* Water can size, main image covers area */
+  background-repeat: no-repeat, no-repeat;
   color: #fff;                 /* White text for contrast */
+
+  /* Use flexbox to move the text to the bottom of the hero section */
+  display: flex;               /* Enable flexbox */
+  flex-direction: column;      /* Stack items vertically */
+  justify-content: flex-end;   /* Move content to the bottom */
+  align-items: center;         /* Center horizontally */
+
   text-align: center;          /* Center the text */
   padding: 60px 20px;          /* Add space above and below */
   border-radius: 0 0 16px 16px; /* Only round bottom corners */
@@ -59,6 +68,8 @@ section {
   /* This uses a simple linear-gradient overlay */
   background-blend-mode: darken;
   background-color: rgba(46, 157, 247, 0.45); /* Blue overlay */
+
+  min-height: 480px; /* Make the hero section taller to show more of the background image */
 }
 
 /* Make the headline bold and modern */
@@ -84,6 +95,11 @@ section {
   color: #222;               /* Dark text for good contrast */
   text-align: center;
   padding: 30px 20px;
+  /* Add a water can image to the far right */
+  background-image: url('img/water-can-transparent.png');
+  background-repeat: no-repeat;
+  background-position: right center; /* Place image on the far right, vertically centered */
+  background-size: 100px;            /* Set image size */
 }
 
 /* Add accent color to section headings */
